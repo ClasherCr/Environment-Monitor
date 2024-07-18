@@ -16,19 +16,23 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="73dp" />
+        tools:layout_editor_absoluteY="73dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="188dp"
+        android:id="@+id/card1"
+        app:cardCornerRadius="20dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
             android:id="@+id/image1"
             android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
         <TextView
             android:id="@+id/developer1"
@@ -37,7 +41,64 @@
             android:layout_marginLeft="100dp"
             android:text="Name: Kevin Panchal"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/card2"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        tools:layout_editor_absoluteX="-28dp">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/developer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Name: Jash Solanki"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/card3"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toBottomOf="@id/card2"
+        tools:layout_editor_absoluteX="-28dp">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/developer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Name: Chinmay Nagar"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
 
 
     </androidx.cardview.widget.CardView>
